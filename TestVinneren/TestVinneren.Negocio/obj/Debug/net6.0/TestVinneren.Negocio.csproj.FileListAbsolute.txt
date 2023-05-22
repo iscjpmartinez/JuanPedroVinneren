@@ -1,0 +1,17 @@
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\bin\Debug\net6.0\TestVinneren.Negocio.deps.json
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\bin\Debug\net6.0\TestVinneren.Negocio.dll
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\bin\Debug\net6.0\TestVinneren.Negocio.pdb
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\bin\Debug\net6.0\TestVinneren.Datos.dll
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\bin\Debug\net6.0\TestVinneren.Entidades.dll
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\bin\Debug\net6.0\TestVinneren.Datos.pdb
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\bin\Debug\net6.0\TestVinneren.Entidades.pdb
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\obj\Debug\net6.0\TestVinneren.Negocio.csproj.AssemblyReference.cache
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\obj\Debug\net6.0\TestVinneren.Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\obj\Debug\net6.0\TestVinneren.Negocio.AssemblyInfoInputs.cache
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\obj\Debug\net6.0\TestVinneren.Negocio.AssemblyInfo.cs
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\obj\Debug\net6.0\TestVinneren.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\obj\Debug\net6.0\TestVinneren.Negocio.csproj.CopyComplete
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\obj\Debug\net6.0\TestVinneren.Negocio.dll
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\obj\Debug\net6.0\refint\TestVinneren.Negocio.dll
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\obj\Debug\net6.0\TestVinneren.Negocio.pdb
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Negocio\obj\Debug\net6.0\ref\TestVinneren.Negocio.dll

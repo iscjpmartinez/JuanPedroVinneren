@@ -1,0 +1,12 @@
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Entidades\bin\Debug\net6.0\TestVinneren.Entidades.deps.json
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Entidades\bin\Debug\net6.0\TestVinneren.Entidades.dll
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Entidades\bin\Debug\net6.0\TestVinneren.Entidades.pdb
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Entidades\obj\Debug\net6.0\TestVinneren.Entidades.csproj.AssemblyReference.cache
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Entidades\obj\Debug\net6.0\TestVinneren.Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Entidades\obj\Debug\net6.0\TestVinneren.Entidades.AssemblyInfoInputs.cache
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Entidades\obj\Debug\net6.0\TestVinneren.Entidades.AssemblyInfo.cs
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Entidades\obj\Debug\net6.0\TestVinneren.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Entidades\obj\Debug\net6.0\TestVinneren.Entidades.dll
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Entidades\obj\Debug\net6.0\refint\TestVinneren.Entidades.dll
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Entidades\obj\Debug\net6.0\TestVinneren.Entidades.pdb
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.Entidades\obj\Debug\net6.0\ref\TestVinneren.Entidades.dll

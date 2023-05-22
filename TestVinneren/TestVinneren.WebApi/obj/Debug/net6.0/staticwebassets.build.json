@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1K+LpM6haAohHJqADV6SJuT/0VmHdYuxyQ+/6vsA6SI=",
+  "Source": "TestVinneren.WebApi",
+  "BasePath": "_content/TestVinneren.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
