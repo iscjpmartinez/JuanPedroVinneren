@@ -99,16 +99,16 @@ CREATE OR ALTER PROCEDURE SP_InsertarCategoria(
 @idCategoriaPadre INT)
 AS
 BEGIN
-	DECLARE @id INT
+	DECLARE @idCategoria INT
 	INSERT INTO Categorias(nombreCategoria, idCategoriaPadre) 
 		VALUES(@nombreCategoria, @idCategoriaPadre)
-	SET @id = SCOPE_IDENTITY()
-	SELECT @id
+	SET @idCategoria = SCOPE_IDENTITY()
+	SELECT @idCategoria as 'id'
 END
 GO
 
 -----------------Procedimiento para modificar una categoria por id.---------------------
-CREATE OR ALTER PROCEDURE SP_ModificarCategoriaPorId(
+CREATE OR ALTER PROCEDURE SP_ModificarCategoria(
 @id INT,
 @nombreCategoria VARCHAR(50), 
 @idCategoriaPadre INT)
@@ -120,7 +120,7 @@ END
 GO
 
 -----------------Procedimiento para eliminar una categoria por id.---------------------
-CREATE OR ALTER PROCEDURE SP_EliminarCategoriaPorId(@id INT)
+CREATE OR ALTER PROCEDURE SP_EliminarCategoria(@id INT)
 AS
 BEGIN
 	DELETE  Categorias WHERE idCategoria = @id
@@ -130,8 +130,8 @@ GO
 EXECUTE SP_ConsultarCategorias;
 EXECUTE SP_ConsultarCategoriaPorId 2;
 EXECUTE SP_InsertarCategoria 'Categoria prueba', 5 ;
-EXECUTE SP_ModificarCategoriaPorId 17, 'Categoria prueba Modificada', 5 ;
-EXECUTE SP_EliminarCategoriaPorId 18;
+EXECUTE SP_ModificarCategoria 17, 'Categoria prueba Modificada', 5 ;
+EXECUTE SP_EliminarCategoria 18;
             
 SELECT * FROM Categorias;
 SELECT * FROM Productos;

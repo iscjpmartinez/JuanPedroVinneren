@@ -68,19 +68,22 @@ namespace TestVinneren.Datos
                 connection.Open();
                 SqlDataReader reader = await _command.ExecuteReaderAsync();
                 reader.Read();
-
-                categoria.IdCategoria = Convert.ToInt32(reader["idCategoria"]);
-                categoria.NombreCategoria = (string)reader["nombreCategoria"];
-                categoria.IdCategoriaPadre = Convert.IsDBNull(reader["idCategoriaPadre"]) ? null : Convert.ToInt32(reader["idCategoriaPadre"]);
-
+                if (reader.HasRows)
+                {
+                    categoria.IdCategoria = Convert.IsDBNull(reader["idCategoria"]) ? null : Convert.ToInt32(reader["idCategoria"]);
+                    categoria.NombreCategoria = (string)reader["nombreCategoria"];
+                    categoria.IdCategoriaPadre = Convert.IsDBNull(reader["idCategoriaPadre"]) ? null : Convert.ToInt32(reader["idCategoriaPadre"]);
+                }
+               
                 connection.Close();
             }
             return categoria;
 
         }
 
-        public async Task AgregarCategoria(Categoria categoria)
+        public async Task<int> AgregarCategoria(Categoria categoria)
         {
+            int idCategoriaCreada;
             _query = $"SP_InsertarCategoria";
             using (SqlConnection connection = new SqlConnection(GetConnectionString()))
             {
@@ -90,9 +93,47 @@ namespace TestVinneren.Datos
                 _command.Parameters.AddWithValue("idCategoriaPadre", categoria.IdCategoriaPadre);
 
                 connection.Open();
+                SqlDataReader reader = await _command.ExecuteReaderAsync();
+                reader.Read();
+                idCategoriaCreada = Convert.ToInt32(reader["id"]);
+                connection.Close();
+            }
+            return idCategoriaCreada;
+        }
+
+        public async Task ModificarCategoria(Categoria categoria)
+        {
+            
+            _query = $"SP_ModificarCategoria";
+            using (SqlConnection connection = new SqlConnection(GetConnectionString()))
+            {
+                _command = new SqlCommand(_query, connection);
+                _command.CommandType = CommandType.StoredProcedure;
+                _command.Parameters.AddWithValue("idCategoria", categoria.IdCategoria);
+                _command.Parameters.AddWithValue("nombreCategoria", categoria.NombreCategoria);
+                _command.Parameters.AddWithValue("idCategoriaPadre", categoria.IdCategoriaPadre);
+
+                connection.Open();
                 await _command.ExecuteNonQueryAsync();
                 connection.Close();
             }
+            
+        }
+
+        public async Task EliminarCategoria(int id)
+        {
+            _query = $"SP_EliminarCategoria";
+            using (SqlConnection connection = new SqlConnection(GetConnectionString()))
+            {
+                _command = new SqlCommand(_query, connection);
+                _command.CommandType = CommandType.StoredProcedure;
+                _command.Parameters.AddWithValue("idCategoria", id);
+              
+                connection.Open();
+                await _command.ExecuteNonQueryAsync();
+                connection.Close();
+            }
+
         }
 
     }

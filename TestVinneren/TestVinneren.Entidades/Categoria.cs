@@ -11,7 +11,7 @@ namespace TestVinneren.Negocio
     public class Categoria
     {
         [Key]
-        public int IdCategoria { get; set; }
+        public int? IdCategoria { get; set; }
 
         [Required]
         public string NombreCategoria { get; set; } = null!;

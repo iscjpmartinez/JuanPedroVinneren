@@ -26,9 +26,19 @@ namespace TestVinneren.Negocio
             return await _dCategorias.ObtenerCategoriaPorId(id);
         }
 
-        public async Task AgregarCategoria(Categoria categoria)
+        public async Task<int> AgregarCategoria(Categoria categoria)
         {
-            await _dCategorias.AgregarCategoria(categoria);
+            return await _dCategorias.AgregarCategoria(categoria);
+        }
+
+        public async Task ModificarCategoria(Categoria categoria)
+        {
+            await _dCategorias.ModificarCategoria(categoria);
+        }
+
+        public async Task EliminarCategoria(int id)
+        {
+            await _dCategorias.EliminarCategoria(id);
         }
     }
 }
