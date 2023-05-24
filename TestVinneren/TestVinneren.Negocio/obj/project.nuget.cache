@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "8Ryr1z/Gps1LQr1gduG3MQLDYESnba9mwhLWJezxHoNAKZdImHFksnml0fkMkrl3QSZRZfeSpaQUHaSzTneu2g==",
+  "dgSpecHash": "WjF/R1XlliL0exRhF9j+dzTgPWCNO65gnfkPhBSbLUuz6jzu9EULPwJmQjcrcXsJQDfwt1VflwZ/znDQsx7LiA==",
   "success": true,
   "projectFilePath": "C:\\Users\\grump\\OneDrive\\Escritorio\\JuanPedroVinneren\\TestVinneren\\TestVinneren.Negocio\\TestVinneren.Negocio.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\grump\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\grump\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\grump\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\grump\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\grump\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\grump\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\grump\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "C:\\Users\\grump\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.0\\microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "C:\\Users\\grump\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",

@@ -74,3 +74,5 @@ C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.W
 C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.WebApi\obj\Debug\net6.0\TestVinneren.WebApi.pdb
 C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.WebApi\obj\Debug\net6.0\TestVinneren.WebApi.genruntimeconfig.cache
 C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.WebApi\obj\Debug\net6.0\ref\TestVinneren.WebApi.dll
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.WebApi\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\grump\OneDrive\Escritorio\JuanPedroVinneren\TestVinneren\TestVinneren.WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

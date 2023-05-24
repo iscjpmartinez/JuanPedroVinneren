@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using TestVinneren.Datos;
 using TestVinneren.Negocio;
-
+using TestVinneren.Negocio.DTOs.Categoria;
 
 namespace TestVinneren.WebApi.Controllers
 {
@@ -10,22 +12,26 @@ namespace TestVinneren.WebApi.Controllers
     public class CategoriasController : ControllerBase
     {
         private readonly NCategorias _nCategorias;
-        
-        public CategoriasController(NCategorias nCategorias)
+        private readonly IMapper _mapper;
+
+        public CategoriasController(NCategorias nCategorias, IMapper mapper)
         {
             _nCategorias = nCategorias;
+            _mapper = mapper;
         }
 
         // GET: api/<CategoriasController>
         [HttpGet]
-        public async Task<IEnumerable<Categoria>> Get()
+        public async Task<List<CategoriaDTO>> Get()
         {
-            return await _nCategorias.ObtenerCategorias();
+            var categorias = await _nCategorias.ObtenerCategorias();
+            var categoriasDTO = _mapper.Map<List<CategoriaDTO>>(categorias);
+            return categoriasDTO;
         }
 
         // GET api/<CategoriasController>/5
         [HttpGet("{id}", Name = "obtenerCategoria")]
-        public async Task<ActionResult<Categoria>> Get(int id)
+        public async Task<ActionResult<CategoriaDTO>> Get(int id)
         {
             Categoria categoria = await _nCategorias.ObtenerCategoriaPorId(id);
 
@@ -35,14 +41,15 @@ namespace TestVinneren.WebApi.Controllers
             }
             else
             {
-                return categoria;
+                var categoriaDTO = _mapper.Map<CategoriaDTO>(categoria);
+                return categoriaDTO;
             }
     
         }
 
         // POST api/<CategoriasController>
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Categoria categoria)
+        public async Task<IActionResult> Post([FromBody] CrearCategoriaDTO crearCategoriaDTO)
         {
             if (!ModelState.IsValid)
             {
@@ -51,8 +58,10 @@ namespace TestVinneren.WebApi.Controllers
 
             try
             {
+                var categoria = _mapper.Map<Categoria>(crearCategoriaDTO);
                 var idCategoriaCreada = await _nCategorias.AgregarCategoria(categoria);
                 Categoria categoriaCreada = await _nCategorias.ObtenerCategoriaPorId(idCategoriaCreada);
+
                 return CreatedAtRoute("obtenerCategoria", new {id = idCategoriaCreada }, categoriaCreada);
             }
             catch (Exception ex)
@@ -68,9 +77,9 @@ namespace TestVinneren.WebApi.Controllers
 
         // PUT api/<CategoriasController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] Categoria categoria)
+        public async Task<IActionResult> Put(int id, [FromBody] CategoriaDTO categoriaDTO)
         {
-            if(id != categoria.IdCategoria)
+            if(id != categoriaDTO.IdCategoria)
             {
                 return NotFound("El id no coincide");
             }
@@ -84,6 +93,7 @@ namespace TestVinneren.WebApi.Controllers
 
             try
             {
+                var categoria = _mapper.Map<Categoria>(categoriaDTO);
                 await _nCategorias.ModificarCategoria(categoria);
             }
             catch (Exception ex)

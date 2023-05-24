@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "4QCMvQxl2F+e6oWkV8yaJPxsPQaErXpygG6gxmyEf09QaIoUB7PVpW7hYxo4MNreNYkoA+TMMcoXlQgU5BFYxA==",
+  "dgSpecHash": "XTG1PDaffF+/l6xaGkArMQ4l8aX46jzuBAHqN4Zxw7497n+BemS9HcysOA9VdKohR9pbmXCJ/hWTGw6yoI3IsQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\grump\\OneDrive\\Escritorio\\JuanPedroVinneren\\TestVinneren\\TestVinneren.WebApi\\TestVinneren.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\grump\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\grump\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\grump\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\grump\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\grump\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\grump\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\grump\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\grump\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "C:\\Users\\grump\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.0\\microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "C:\\Users\\grump\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

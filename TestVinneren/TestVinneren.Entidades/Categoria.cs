@@ -13,10 +13,10 @@ namespace TestVinneren.Negocio
         [Key]
         public int? IdCategoria { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El campo {0} es requerido")]
         public string NombreCategoria { get; set; } = null!;
 
-        [Required]
+        [Required(ErrorMessage = "El campo {0} es requerido")]
         public int? IdCategoriaPadre { get; set; }
     }
 
